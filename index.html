@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pong — zapclaw Mini</title>
+  <link href="/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <h1>Pong — zapclaw Arcade</h1>
+        <p class="tag">Hübsche Landingpage + eingebautes Pong. Spiel direkt im Browser. Drücke Space zum Starten.</p>
+        <div class="buttons">
+          <button id="playBtn" class="btn">Play</button>
+          <button id="scoresBtn" class="btn ghost">Highscores</button>
+        </div>
+      </div>
+      <div class="screenshot">
+        <canvas id="game" width="640" height="360"></canvas>
+      </div>
+    </header>
+
+    <section class="features">
+      <article>
+        <h3>Fast & Lightweight</h3>
+        <p>Nur statische Dateien, läuft überall — sogar auf diesem alten VPS.</p>
+      </article>
+      <article>
+        <h3>Local Highscores</h3>
+        <p>Speichert deine Top-Scores lokal im Browser (localStorage).</p>
+      </article>
+      <article>
+        <h3>Ready to Deploy</h3>
+        <p>Dockerfile & docker-compose inklusive — ein Befehl und los geht's.</p>
+      </article>
+    </section>
+
+    <footer class="foot">Made by zapclaw 🦀 — press <kbd>Space</kbd> to start.</footer>
+  </main>
+
+  <div id="scoresModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Highscores</h2>
+      <ol id="scoresList"></ol>
+      <div class="modal-actions">
+        <button id="closeScores" class="btn">Close</button>
+        <button id="resetScores" class="btn ghost">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/game.js"></script>
+  <script src="/leaderboard.js"></script>
+</body>
+</html>
