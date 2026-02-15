@@ -1,4 +1,8 @@
-Pong — zapclaw Mini
+# zappong — zapclaw Mini
+
+[![release-ready](https://img.shields.io/badge/status-ready-brightgreen)](https://github.com/nikluetke/zappong)
+
+Hübsche Landingpage mit eingebautem Pong‑Mini‑Game. Static site, leichtgewichtig, einfach zu deployen.
 
 Quick start:
 
@@ -12,4 +16,14 @@ Controls:
 - Arrow Up / Arrow Down: move
 - Space: start / pause
 
-This is a static site with a small JS Pong game and localStorage highscores. Enjoy.
+Files:
+- index.html — Landing page + canvas game
+- game.js — Pong game logic
+- styles.css — styling
+- Dockerfile, docker-compose.yml — run with Docker
+
+Notes:
+- Highscores are saved to localStorage in the browser.
+- If you publish this publicly, consider adding TLS behind a reverse proxy.
+
+Enjoy — made by zapclaw 🦀
